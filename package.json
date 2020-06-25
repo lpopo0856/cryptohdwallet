@@ -1,8 +1,8 @@
 {
   "name": "cryptohdwallet",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "a simple way to generate a bip-44 standard HD crypto wallet",
-  "main": "/lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +11,7 @@
     "url": "git+https://github.com/lpopo0856/cryptohdwallet.git"
   },
   "author": "",
-  "bin": {
-    "cryptohdwallet": "./lib/cli/index.js"
-  },
+  "bin": "./cli/index.js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lpopo0856/cryptohdwallet/issues"
