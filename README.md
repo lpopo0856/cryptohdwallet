@@ -1,1 +1,1 @@
-# crypto-account-generator
+# CryptoHDWallet

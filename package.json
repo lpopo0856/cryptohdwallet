@@ -1,0 +1,37 @@
+{
+  "name": "cryptohdwallet",
+  "version": "1.0.0",
+  "description": "a simple way to generate a bip-44 standard HD crypto wallet",
+  "main": "/lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpopo0856/cryptohdwallet.git"
+  },
+  "author": "",
+  "bin": {
+    "cryptohdwallet": "./lib/cli/index.js"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lpopo0856/cryptohdwallet/issues"
+  },
+  "homepage": "https://github.com/lpopo0856/cryptohdwallet#readme",
+  "dependencies": {
+    "base-x": "^3.0.8",
+    "bchaddrjs": "^0.4.9",
+    "bchaddrjs-slp": "^0.2.8",
+    "bip39": "^3.0.2",
+    "bip44-constants": "^8.0.27",
+    "bitcoinjs-lib": "^5.1.10",
+    "commander": "^5.1.0",
+    "ethereumjs-util": "^7.0.2",
+    "hdkey": "^2.0.1",
+    "keccak": "^3.0.0",
+    "prompts": "^2.3.2",
+    "secp256k1": "^4.0.1"
+  },
+  "devDependencies": {}
+}
