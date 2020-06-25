@@ -1,6 +1,6 @@
 {
   "name": "cryptohdwallet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple way to generate a bip-44 standard HD crypto wallet",
   "main": "/lib/index.js",
   "scripts": {
@@ -19,6 +19,18 @@
     "url": "https://github.com/lpopo0856/cryptohdwallet/issues"
   },
   "homepage": "https://github.com/lpopo0856/cryptohdwallet#readme",
+  "keywords": [
+    "bitcoin",
+    "ethereum",
+    "bip32",
+    "bip44",
+    "wallet",
+    "bip",
+    "key",
+    "hierarchical",
+    "deterministic",
+    "crypto"
+  ],
   "dependencies": {
     "base-x": "^3.0.8",
     "bchaddrjs": "^0.4.9",
