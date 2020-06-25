@@ -12,7 +12,7 @@
   },
   "author": "",
   "bin": {
-    "crypto-hdwallet": "./cli/index.js"
+    "crypto-hdwallet": "./bin/index.js"
   },
   "license": "MIT",
   "bugs": {
