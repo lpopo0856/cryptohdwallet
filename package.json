@@ -1,6 +1,6 @@
 {
   "name": "cryptohdwallet",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a simple way to generate a bip-44 standard HD crypto wallet",
   "main": "./lib/index.js",
   "scripts": {
