@@ -11,7 +11,9 @@
     "url": "git+https://github.com/lpopo0856/cryptohdwallet.git"
   },
   "author": "",
-  "bin": "./cli/index.js",
+  "bin": {
+    "cryptohdwallet": "./cli/index.js"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lpopo0856/cryptohdwallet/issues"
