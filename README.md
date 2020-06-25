@@ -21,12 +21,20 @@ Getting Started
 $   npm i --save cryptohdwallet
 ```
 
+Add script to your **package.json** file
+
+``` json
+    "scripts": {
+        "init-wallet": "crypto-hdwallet init"
+    },
+```
+
 ### Initialize with CLI Tool
 
 Run the init command in your project directory:
 
 ``` shell
-$   cryptohdwallet init
+$   npm run init-wallet
 ```
 
 The cli tool will help you setup a **crypto-root-keys.json** file in the root directory of your project.
