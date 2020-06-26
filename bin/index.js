@@ -57,17 +57,11 @@ program
                     console.log('\x1b[32m%s\x1b[0m','crypto-wallet-generator init successfully');
                 }
             } catch (error) {
-                console.log(error, 'background: #222; color: #bada55')
+                console.log(error)
                 console.log('\n\n\n\nLeaving...')
             }
 
         }
     )
-
-program
-    .on('exit', () => {
-        process.exit(1);
-    })
-    .description('exit.')
 
 program.parse(process.argv);
