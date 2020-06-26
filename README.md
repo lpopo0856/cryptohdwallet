@@ -24,9 +24,9 @@ $   npm i --save cryptohdwallet
 Add script to your **package.json** file
 
 ``` json
-    "scripts": {
-        "init-wallet": "crypto-hdwallet init"
-    },
+"scripts": {
+    "init-wallet": "crypto-hdwallet init"
+},
 ```
 
 ### Initialize with CLI Tool
