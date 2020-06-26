@@ -4,7 +4,7 @@
 
 It can be used to generate multiple kinds of cryptocurrency address without exposing the private key. 
 
-And because it is a HD wallet, you only need to remember one mnemonic.
+It's a HD wallet, you only need to remember one mnemonic.
 
 This project complies with the relevant specifications of [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
 
