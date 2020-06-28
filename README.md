@@ -1,5 +1,7 @@
 # CryptoHDWallet
 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
 ## This project is a HD wallet address generator with private and public key separated. 
 
 It can be used to generate multiple kinds of cryptocurrency address without exposing the private key. 
