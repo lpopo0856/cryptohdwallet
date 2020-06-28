@@ -12,6 +12,20 @@ This project complies with the relevant specifications of [BIP-44](https://githu
 
 [BTC](https://bitcoin.org/) , [ETH](https://ethereum.org/) , [BCH](https://www.bitcoincash.org/) , [SLP](https://simpleledger.cash/) , [BSV](https://bitcoinsv.com/) , [DASH](https://www.dash.org/) , [LTC](https://litecoin.org/) , [DOGE](https://dogecoin.com/) , [EOS](https://eos.io/) , [XRP](https://ripple.com/xrp/) , [NAV](https://navcoin.org/en)  , [STRAT](https://www.stratisplatform.com/)
 
+## Current stage
+
+**#1** Can generate multiple kinds of cryptocurrency address from public key. 
+
+***->Complete***
+
+**#2** Can use this package for transactions, private key management and other functions
+
+***->In develop***
+
+**#3** Cold wallet
+
+***->In Imagine***
+
 
 Getting Started
 ------------
@@ -24,9 +38,9 @@ $   npm i --save cryptohdwallet
 Add script to your **package.json** file
 
 ``` json
-    "scripts": {
-        "init-wallet": "crypto-hdwallet init"
-    },
+"scripts": {
+    "init-wallet": "crypto-hdwallet init"
+},
 ```
 
 ### Initialize with CLI Tool
