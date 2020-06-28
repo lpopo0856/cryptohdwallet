@@ -46,5 +46,7 @@
     "prompts": "^2.3.2",
     "secp256k1": "^4.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
 }
