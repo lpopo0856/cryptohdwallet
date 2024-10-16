@@ -2,39 +2,35 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-## This project is a HD wallet address generator with private and public key separated. 
+## Overview
 
-It can be used to generate multiple kinds of cryptocurrency address without exposing the private key. 
+CryptoHDWallet is an HD wallet address generator that separates public and private keys. It supports generating multiple cryptocurrency addresses without exposing the private key.
 
-It's a HD wallet, you only need to remember one mnemonic.
+As an HD wallet, it only requires you to remember one mnemonic phrase.
 
-This project complies with the relevant specifications of [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
+This project follows the relevant specifications of [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki).
 
-## Supported cryptocurrency
+## Supported Cryptocurrencies
 
-[BTC](https://bitcoin.org/) , [ETH](https://ethereum.org/) , [BCH](https://www.bitcoincash.org/) , [SLP](https://simpleledger.cash/) , [BSV](https://bitcoinsv.com/) , [DASH](https://www.dash.org/) , [LTC](https://litecoin.org/) , [DOGE](https://dogecoin.com/) , [EOS](https://eos.io/) , [XRP](https://ripple.com/xrp/) , [NAV](https://navcoin.org/en)  , [STRAT](https://www.stratisplatform.com/)
+- [BTC](https://bitcoin.org/)
+- [ETH](https://ethereum.org/)
+- [BCH](https://www.bitcoincash.org/)
+- [SLP](https://simpleledger.cash/)
+- [BSV](https://bitcoinsv.com/)
+- [DASH](https://www.dash.org/)
+- [LTC](https://litecoin.org/)
+- [DOGE](https://dogecoin.com/)
+- [EOS](https://eos.io/)
+- [XRP](https://ripple.com/xrp/)
+- [NAV](https://navcoin.org/en)
+- [STRAT](https://www.stratisplatform.com/)
 
-## Current stage
+## Getting Started
 
-**#1** Can generate multiple kinds of cryptocurrency address from public key. 
+### Installation
 
-***->Complete***
-
-**#2** Can use this package for transactions, private key management and other functions
-
-***->In develop***
-
-**#3** Cold wallet
-
-***->In Imagine***
-
-
-Getting Started
-------------
-### Install
-
-``` shell
-$   npm i --save cryptohdwallet
+```shell
+$ npm i --save cryptohdwallet
 ```
 
 Add script to your **package.json** file
@@ -47,13 +43,13 @@ Add script to your **package.json** file
 
 ### Initialize with CLI Tool
 
-Run the init command in your project directory:
+Run the init-wallet command in your project directory:
 
 ``` shell
 $   npm run init-wallet
 ```
 
-The cli tool will help you setup a **crypto-root-keys.json** file in the root directory of your project.
+The CLI tool will guide you through setting up a crypto-root-keys.json file in the root directory of your project.
 
 
 Usage
@@ -64,20 +60,20 @@ Usage
 ```js
 var cryptohdwallet = require('cryptohdwallet');
 
-// number of the address derived from root, should be lower than 2^31
+// Number of addresses derived from the root, should be less than 2^31
 var count = 0;
 
-// you should define your coin symbol at upper case
-var mainBTCAddress = cryptohdwallet.getAddress('BTC', count,'main');
-var changeBTCAddress = cryptohdwallet.getAddress('BTC', count,'change');
+// Define your coin symbol in uppercase
+var mainBTCAddress = cryptohdwallet.getAddress('BTC', count, 'main');
+var changeBTCAddress = cryptohdwallet.getAddress('BTC', count, 'change');
 
 console.log(mainBTCAddress);
 // => '19rF4MDgHLcqMUWBqPEPQgZ65cz549h9CX'
 console.log(changeBTCAddress);
 // => '13CmhUZ27p5Z26P6ELBmTsrxUTkafxLmDT'
 
-// ethereum has no change address, you should always use 'main' as type
-var ETHAddress = cryptohdwallet.getAddress('ETH', count,'main');
+// Ethereum does not use a change address, always use 'main' as the type
+var ETHAddress = cryptohdwallet.getAddress('ETH', count, 'main');
 
 console.log(ETHAddress);
 // => '0xF444640DE9531335eFC535147b131343c74258d0'
